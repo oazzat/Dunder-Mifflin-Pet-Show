@@ -4,6 +4,9 @@ We’ve started some of the work for you but we still need your help to get our 
 Build out the associations for the models we’ve created. You may need to change the schema in order to get the rake db:seed command to work.
 
 On both the index page for Dogs and Employees, a user should be able to click on either take them to the corresponding show page.
+ - `link_to` their show page on the index
+ - List all of the dogs/employees
+  - Iterate through Dog.all/Employee.all
 
 The Employee show page should list all of their attributes (bonus if you could get a picture to show up)
 

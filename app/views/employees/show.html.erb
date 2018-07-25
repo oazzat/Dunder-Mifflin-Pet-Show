@@ -1,0 +1,6 @@
+<h1><%= @employee.name %> - Belongs To <%= link_to @employee.dog.name, dog_path(@employee.dog) %></h1>
+<h3>a.k.a. <%= @employee.alias %></h3>
+<h3><%= @employee.title %></h3>
+<h3><%= @employee.office %></h3>
+
+<img src="<%= @employee.img_url %>" alt="no employee photo... yet">
