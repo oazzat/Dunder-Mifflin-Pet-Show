@@ -1,0 +1,11 @@
+<h1><%= @employee.to_s %></h1>
+<br>
+  <img src=<%= @employee.img_url %>><br>
+  <ul>
+  <li>Alias: <%= @employee.alias %></li>
+  <li>Title: <%= @employee.title %></li>
+  <li>Office: <%= @employee.office %></li>
+  <li>Owner: <%= link_to @employee.dog.name, @employee.dog %>
+  </ul>
+  <br>
+  <%= button_to "Edit Employee #{@employee.to_s}", edit_employee_path, method: :get %>
